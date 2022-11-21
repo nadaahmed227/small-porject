@@ -21,9 +21,6 @@ overflow: hidden; /*To hide the excess of the circle*/
 .btn span{ 
 position: relative;/*to adjust layers */
 z-index: 1;/*When the mouse comes to the button, the first color appears*/
-
-
-
 }
 .btn::before{ /*to effect before the mouse come to the button*/
 content: ""; /*to adjust the content */
