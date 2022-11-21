@@ -1,38 +1,38 @@
-body{ /* To have effects on the body */
-margin: 0; /* to maintain the outer margins*/
-display: flex;/*makes the button display flex*/
-justify-content: center;/* to make button justify in center */
-height: 100vh; /*The word button is at the top of the display window */
-align-items: center; /*to make button in center  */
-background-color: aliceblue;/*to make background color in body aliceblue*/ 
-font-family: sans-serif; /*Italicizes the end of button letters*/
+body{ 
+margin: 0; 
+display: flex;
+justify-content: center;
+height: 100vh; 
+align-items: center; 
+background-color: aliceblue;/ 
+font-family: sans-serif; 
 
 } 
-.btn{ /*to effects on the button  */
-background-color: pink;  /*to make a background-color button pink*/
-padding: 20px 40px;/*to maintain internal margins width=20px, height=40px*/
-border-radius: 5px;/*To make a bend in the button box*/
-box-shadow: 0 4px 4px rgba(0, 0,0,0.3 ); /*to make box-shadow 0:to set the horizontal shadow ,4px:To set vertical shade ,4px:to make a shadow border-radius rgba:change shadow color*/
-text-decoration: none; /*To remove the line below the button*/
-color: black; /*to change a word button to black*/
-position: relative; 
-overflow: hidden; /*To hide the excess of the circle*/
+.btn{ 
+background-color: pink;  
+padding: 20px 40px;
+border-radius: 5px;
+box-shadow: 0 4px 4px rgba(0, 0,0,0.3 );
+text-decoration: none; 
+color: black; 
+position: relative;  
+
+overflow: hidden; 
 } 
 .btn span{ 
-position: relative;/*to adjust layers */
-z-index: 1;/*When the mouse comes to the button, the first color appears*/
+position: relative;
+z-index: 1;
 }
-.btn::before{ /*to effect before the mouse come to the button*/
-content: ""; /*to adjust the content */
+.btn::before{ 
 position: absolute; 
-background-color: orangered;  /*when the mouse comes to the button to make background-color orangered */
+background-color: orangered;  
 width: 0px; 
 height: 0px; 
-left: var(--xpos); /* add varable */
-top: var(--ypos); /* add varable */
-transform: translate(-50%,-50%); /*To put it exactly in the middle x=-50%,y=50%*/
-border-radius: 50%; /*To adjust the radius*/ 
-transition: width 0.5s,height 0.5s;   /*for the mouse move property*/
+left: var(--xpos); 
+top: var(--ypos); 
+transform: translate(-50%,-50%); 
+border-radius: 50%;  
+transition: width 0.5s,height 0.5s;   
 
 }       
 .btn:hover::before{   
